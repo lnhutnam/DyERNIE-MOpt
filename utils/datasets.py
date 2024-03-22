@@ -21,7 +21,7 @@ class Data:
         self.timestamps = self.get_timestamps(self.data)
 
     def load_data(self, data_dir, data_type="train"):
-        with open(os.path.join(data_dir, data_type+'.txt'), "r", encoding='utf-8') as f:
+        with open(os.path.join(data_dir, data_type), "r", encoding='utf-8') as f:
             data = f.readlines()
             if 'static' in data_dir:
                 data = [line.strip().split("\t") + ['0'] for line in data]  # only cut by "\t", not by white space.
