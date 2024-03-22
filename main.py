@@ -554,7 +554,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--dataset",
         type=str,
-        default="GDELT_completion",
+        default="ICEWS14",
         nargs="?",
         help="Which dataset to use.",
     )
